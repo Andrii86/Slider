@@ -1,5 +1,5 @@
-const carouselSlide = document.querySelector('carousel-slide');
-const carouselImages = document.querySelectorAll('carousel-slide img');
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImages = document.querySelectorAll('.carousel-slide img');
 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
@@ -11,7 +11,7 @@ carouselSlide.style.transform = 'translateX(' + (-size * counter) +  'px)';
 
 
 nextBtn.addEventListener('click',() => {
-    carouselSlide.style.transition = "transformed 0.4s ease-in-out"
+    carouselSlide.style.transition = "transformed 0.4s ease-in-out";
     counter++;
     carouselSlide.style.transform = 'translateX(' + (-size * counter) +  'px)';
 });
